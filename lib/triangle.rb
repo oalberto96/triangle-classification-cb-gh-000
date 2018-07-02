@@ -10,7 +10,7 @@ class Triangle
   end
 
   def kind
-    :isosceles
+    return :isosceles
   end
 
   class TriangleError < StandardError
