@@ -11,6 +11,7 @@ class Triangle
 
   def greater_than_zero?
     @side_a > 0 && @side_b > 0 && @side_c > 0
+    binding.pry
   end
 
   def fulfill_inequality_theorem?
@@ -18,7 +19,7 @@ class Triangle
   end
 
   def kind
-    if greater_than_zero? == false && self.fulfill_inequality_theorem? == true
+    if self.greater_than_zero? == false && self.fulfill_inequality_theorem? == true
       raise TriangleError
     else
       if side_a * 3 == side_a + side_b + side_c
