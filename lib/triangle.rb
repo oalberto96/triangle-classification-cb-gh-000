@@ -11,7 +11,6 @@ class Triangle
 
   def greater_than_zero?
     @side_a > 0 && @side_b > 0 && @side_c > 0
-    binding.pry
   end
 
   def fulfill_inequality_theorem?
