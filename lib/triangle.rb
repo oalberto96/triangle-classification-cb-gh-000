@@ -14,6 +14,9 @@ class Triangle
   end
 
   def fulfill_inequality_theorem?
+    if @side_a == 1 && @side_b == 1 && @side_c == 3
+      binding.pry
+    end
     (@side_a + @side_b) > @side_c  && (@side_a + @side_c) > @side_b && (@side_b + @side_c) > @side_a
   end
 
