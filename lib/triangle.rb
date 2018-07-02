@@ -10,7 +10,10 @@ class Triangle
   end
 
   def kind
-    return :isosceles
+    if side_a == side_b == side_c
+      return :equilateral
+    else
+      return :isosceles
   end
 
   class TriangleError < StandardError
