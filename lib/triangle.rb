@@ -14,6 +14,7 @@ class Triangle
       return :equilateral
     else
       return :isosceles
+    end
   end
 
   class TriangleError < StandardError
