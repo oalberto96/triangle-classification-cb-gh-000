@@ -14,15 +14,16 @@ class Triangle
   end
 
   def kind
-    if side_a < 0 || side_b < 0
+    if !greater_than_zero? && 
       raise
     else
-    if side_a * 3 == side_a + side_b + side_c
-      return :equilateral
-    elsif side_a != side_b && side_a != side_c && side_b != side_c
-      return :scalene
-    else
-      return :isosceles
+      if side_a * 3 == side_a + side_b + side_c
+        return :equilateral
+      elsif side_a != side_b && side_a != side_c && side_b != side_c
+        return :scalene
+      else
+        return :isosceles
+      end
     end
   end
 
