@@ -13,8 +13,12 @@ class Triangle
     side_a > 0 && side_b > 0 && side_c > 0
   end
 
+  def fulfill_inequality_theorem?
+    side_a + side_b > side_c || side_a + side_c > side_b || side_b + side_c > side_a
+  end
+
   def kind
-    if !greater_than_zero? && 
+    if !greater_than_zero? &&
       raise
     else
       if side_a * 3 == side_a + side_b + side_c
