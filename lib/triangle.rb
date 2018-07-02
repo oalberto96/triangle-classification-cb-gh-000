@@ -11,7 +11,7 @@ class Triangle
 
   def kind
     if side_a * 3 == side_a + side_b + side_c
-      return :equilateral 
+      return :equilateral
     end
   end
 
