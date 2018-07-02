@@ -19,7 +19,7 @@ class Triangle
   end
 
   def kind
-    if self.greater_than_zero? == false && self.fulfill_inequality_theorem? == true
+    if self.greater_than_zero? == false && self.fulfill_inequality_theorem? == false
       raise TriangleError
     else
       if side_a * 3 == side_a + side_b + side_c
