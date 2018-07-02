@@ -12,7 +12,9 @@ class Triangle
   def kind
     if side_a * 3 == side_a + side_b + side_c
       return :equilateral
-    else 
+    elsif side_a != side_b && side_a != side_c && side_b != side_c 
+      return :scalene
+    else
       return :isosceles
     end
   end
